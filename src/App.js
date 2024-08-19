@@ -22,7 +22,7 @@ export default function App() {
       if (text === "") return;
       async function getMovieData() {
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${KEY}&s=${text}`
+          `https://www.omdbapi.com/?apikey=${KEY}&s=${text}`
         );
         const data = await res.json();
         console.log(data.Search);
